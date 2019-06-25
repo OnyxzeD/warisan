@@ -85,11 +85,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AnimControl.cs" />
+    <Compile Include="Assets\BossAnimController.cs" />
     <Compile Include="Assets\Credit.cs" />
-    <Compile Include="Assets\DamageControl.cs" />
-    <Compile Include="Assets\HealthController.cs" />
-    <Compile Include="Assets\Hero.cs" />
     <Compile Include="Assets\HeroAnimController.cs" />
     <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\Scrabble Framework\Script\CharObject.cs" />
