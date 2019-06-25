@@ -90,14 +90,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AnimControl.cs" />
+    <Compile Include="Assets\BossAnimController.cs" />
     <Compile Include="Assets\Credit.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\DamageControl.cs" />
     <Compile Include="Assets\Dialogue\Dialogue.cs" />
     <Compile Include="Assets\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\Dialogue\DialogueTrigger.cs" />
     <Compile Include="Assets\HealthController.cs" />
     <Compile Include="Assets\Hero.cs" />
+=======
+>>>>>>> 239009a11904f52f85e5edec06c32dc74381819b
     <Compile Include="Assets\HeroAnimController.cs" />
     <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\Scrabble Framework\Script\CharObject.cs" />
