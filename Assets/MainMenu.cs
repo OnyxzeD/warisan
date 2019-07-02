@@ -15,6 +15,21 @@ public class MainMenu : MonoBehaviour {
         SceneManager.LoadScene("CreditScene");
     }
 
+    public void showMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void showDialog()
+    {
+        SceneManager.LoadScene("Dialogue");
+    }
+
+    public void showBattle()
+    {
+        SceneManager.LoadScene("First");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
