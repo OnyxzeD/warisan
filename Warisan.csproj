@@ -93,6 +93,7 @@
     <Compile Include="Assets\HeroAnimController.cs" />
     <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\Scrabble Framework\Script\CharObject.cs" />
+    <Compile Include="Assets\Scrabble Framework\Script\WordScramble.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

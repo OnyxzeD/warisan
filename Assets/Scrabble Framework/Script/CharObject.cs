@@ -7,6 +7,7 @@ public class CharObject : MonoBehaviour {
 
     public char character;
     public Text text;
+    public Image image;
     public RectTransform rectTransform;
     public int index;
 
@@ -14,6 +15,7 @@ public class CharObject : MonoBehaviour {
     public Color normalColor;
     public Color selectedColor;
 
+    bool isSelected = false;
     public CharObject Init(char c)
     {
         character = c;
@@ -22,4 +24,18 @@ public class CharObject : MonoBehaviour {
         return this;
     }
 
+    public void Select()
+    {
+        isSelected = !isSelected;
+
+        image.color = isSelected ? selectedColor : normalColor;
+        if (isSelected)
+        {
+            WordScramble.main.Select(this);
+        }
+        else
+        {
+            WordScramble.main.Unselect();
+        }
+    }
 }
