@@ -30,6 +30,7 @@ public class HeroAnimController : MonoBehaviour {
 
     public void HeroAttack()
     {
+        anim.Play("AttackH");
         HealthB -= 10;
         UpdateHealth();
     }

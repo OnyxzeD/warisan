@@ -42,6 +42,9 @@ public class WordScramble : MonoBehaviour {
     public CharObject prefab;
     public Transform container;
     public float space;
+    public float lerpSpeed = 5;
+    public float checkSpeed = 1;
+    public HeroAnimController hac;
 
     List<CharObject> charObjects = new List<CharObject>();
     CharObject firstSelected;
@@ -73,7 +76,8 @@ public class WordScramble : MonoBehaviour {
         for(int i = 0; i < charObjects.Count; i++)
         {
             charObjects[i].rectTransform.anchoredPosition
-                = new Vector2((i - center) * space, 0);
+                = Vector2.Lerp(charObjects[i].rectTransform.anchoredPosition, 
+                    new Vector2((i - center) * space, 0), lerpSpeed * Time.deltaTime);
             charObjects[i].index = i;
         }
     }
@@ -124,6 +128,8 @@ public class WordScramble : MonoBehaviour {
 
         charObjects[indexA].transform.SetAsLastSibling();
         charObjects[indexB].transform.SetAsLastSibling();
+
+        CheckWord();
     }
 
     public void Select(CharObject charObject)
@@ -142,14 +148,15 @@ public class WordScramble : MonoBehaviour {
             firstSelected = charObject;
         }
     }
+
     public void Unselect()
     {
         firstSelected = null;
     }
 
-    public bool CheckWord()
+    public void CheckWord()
     {
-        string word = "";
+        /*string word = "";
         foreach(CharObject charObject in charObjects)
         {
             word += charObject.character;
@@ -162,6 +169,26 @@ public class WordScramble : MonoBehaviour {
 
             return true;
         }
-        return false;
+        return false;*/
+        StartCoroutine(CoCheckWord());
+    }
+
+    IEnumerator CoCheckWord()
+    {
+        
+
+        string word = "";
+        foreach (CharObject charObject in charObjects)
+        {
+            word += charObject.character;
+        }
+
+        if (word == words[currentWord].word)
+        {
+            hac.HeroAttack();
+            yield return new WaitForSeconds(checkSpeed);
+            currentWord++;
+            ShowScramble(currentWord);
+        }
     }
 }
