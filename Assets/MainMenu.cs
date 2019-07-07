@@ -30,6 +30,11 @@ public class MainMenu : MonoBehaviour {
         SceneManager.LoadScene("First");
     }
 
+    public void showScene()
+    {
+        SceneManager.LoadScene("ShipScene");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
