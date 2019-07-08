@@ -17,25 +17,25 @@ Platform assembly: F:\Project Bimo\warisan\warisan_Data\Managed\UnityEngine.Netw
 Loading F:\Project Bimo\warisan\warisan_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: F:\Project Bimo\warisan\warisan_Data\Managed\TextMeshPro-5.6-Runtime.dll (this message is harmless)
 Loading F:\Project Bimo\warisan\warisan_Data\Managed\TextMeshPro-5.6-Runtime.dll into Unity Child Domain
-- Completed reload, in  0.174 seconds
+- Completed reload, in  0.306 seconds
 Platform assembly: F:\Project Bimo\warisan\warisan_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: F:\Project Bimo\warisan\warisan_Data\Managed\System.dll (this message is harmless)
 desktop: 1440x900 60Hz; virtual: 1440x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.348749 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.493294 ms
+UnloadTime: 46.044712 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.353451 ms
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 382.
-Total: 0.274138 ms (FindLiveObjects: 0.031012 ms CreateObjectMapping: 0.021650 ms MarkObjects: 0.204214 ms  DeleteObjects: 0.016969 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 416.
+Total: 0.842017 ms (FindLiveObjects: 0.033060 ms CreateObjectMapping: 0.015798 ms MarkObjects: 0.775311 ms  DeleteObjects: 0.017554 ms)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.344940 ms
+UnloadTime: 0.585433 ms
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 397.
-Total: 0.437685 ms (FindLiveObjects: 0.031305 ms CreateObjectMapping: 0.021065 ms MarkObjects: 0.269749 ms  DeleteObjects: 0.115272 ms)
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 401.
+Total: 0.461383 ms (FindLiveObjects: 0.025746 ms CreateObjectMapping: 0.014921 ms MarkObjects: 0.303687 ms  DeleteObjects: 0.116735 ms)
 
 The referenced script on this Behaviour (Game Object 'DamageControl') is missing!
  
@@ -45,24 +45,12 @@ The referenced script on this Behaviour (Game Object 'HealthControl') is missing
  
 (Filename:  Line: 1744)
 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.827388 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.949098 ms
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 472.
-Total: 0.393214 ms (FindLiveObjects: 0.035108 ms CreateObjectMapping: 0.022527 ms MarkObjects: 0.245759 ms  DeleteObjects: 0.089526 ms)
-
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.567293 ms
-
-Unloading 63 unused Assets to reduce memory usage. Loaded Objects now: 390.
-Total: 7.079908 ms (FindLiveObjects: 0.037741 ms CreateObjectMapping: 0.024575 ms MarkObjects: 0.463431 ms  DeleteObjects: 6.552989 ms)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.444121 ms
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 389.
-Total: 0.387070 ms (FindLiveObjects: 0.021942 ms CreateObjectMapping: 0.014628 ms MarkObjects: 0.250147 ms  DeleteObjects: 0.099181 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 472.
+Total: 3.997680 ms (FindLiveObjects: 0.031597 ms CreateObjectMapping: 0.023990 ms MarkObjects: 0.228497 ms  DeleteObjects: 3.713009 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2ca8 -> priority: 1 
-  Thread -> id: 4d20 -> priority: 1 
+  Thread -> id: 4960 -> priority: 1 
+  Thread -> id: 2dc4 -> priority: 1 
