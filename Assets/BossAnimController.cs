@@ -6,15 +6,14 @@ using UnityEngine.UI;
 public class BossAnimController : MonoBehaviour {
 
     public Animator anim;
-    public int HealthH;
-    public Text healthTextH;
+    public HitSoundB hitB;
+    public HealthController healthController;
+    
     //private DamageControl damageCon = new DamageControl();
 
     // Use this for initialization
     void Start()
     {
-        HealthH = 100;
-        UpdateHealth();
         anim = GetComponent<Animator>();
     }
 
@@ -24,18 +23,20 @@ public class BossAnimController : MonoBehaviour {
         if (Input.GetKeyDown("2"))
         {
             BossAttack();
-            anim.Play("AttackB");
         }
     }
 
     public void BossAttack()
     {
-        HealthH -= 10;
-        UpdateHealth();
+        anim.Play("AttackB");
+        hitB.SoundHitB();
+        healthController.DamageToH();
     }
 
-    public void UpdateHealth()
+    public void BossDead()
     {
-        healthTextH.text = HealthH.ToString("0");
+        anim.Play("DeadB");
+        anim.SetBool("isDead",true);
     }
+   
 }

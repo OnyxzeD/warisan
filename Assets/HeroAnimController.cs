@@ -7,16 +7,15 @@ using UnityEngine.UI;
 public class HeroAnimController : MonoBehaviour {
 
     public Animator anim;
-    public int HealthB;
-    public Text healthTextB;
+    public HitSoundH hitH;
+    public HealthController healthController;
     //private DamageControl damageCon = new DamageControl();
 
     // Use this for initialization
     void Start () {
-        HealthB = 50;
-        UpdateHealth();
+        
         anim = GetComponent<Animator>();
-	}
+    }
 
     // Update is called once per frame
     void Update()
@@ -24,19 +23,19 @@ public class HeroAnimController : MonoBehaviour {
         if (Input.GetKeyDown("1"))
         {
             HeroAttack();
-            anim.Play("AttackH");
         }
     }
 
     public void HeroAttack()
     {
         anim.Play("AttackH");
-        HealthB -= 10;
-        UpdateHealth();
+        hitH.SoundHitH();
+        healthController.DamageToB();
     }
 
-    public void UpdateHealth()
+    public void HeroDead()
     {
-        healthTextB.text = HealthB.ToString("0");
+        
     }
+    
 }
