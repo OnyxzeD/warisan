@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class BossAnimController : MonoBehaviour {
+public class BossAnimController : MonoBehaviour
+{
 
     public Animator anim;
     public HitSoundB hitB;
     public HealthController healthController;
-    
+
     //private DamageControl damageCon = new DamageControl();
 
     // Use this for initialization
@@ -36,7 +38,7 @@ public class BossAnimController : MonoBehaviour {
     public void BossDead()
     {
         anim.Play("DeadB");
-        anim.SetBool("isDead",true);
+        anim.SetBool("isDead", true);
     }
-   
+
 }

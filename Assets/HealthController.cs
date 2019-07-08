@@ -9,6 +9,7 @@ public class HealthController : MonoBehaviour {
     public Text healthTextH;
     public Text healthTextB;
     public BossAnimController bossAnimC;
+    public HeroAnimController heroAnimC;
 
     // Use this for initialization
     void Start () {

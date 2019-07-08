@@ -2,7 +2,6 @@ Initialize engine version: 5.6.7f1 (e80cc3114ac1)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-<<<<<<< HEAD
     Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c81)
     Vendor:   NVIDIA
     VRAM:     1977 MB
@@ -18,52 +17,26 @@ Platform assembly: F:\Project Bimo\warisan\warisan_Data\Managed\UnityEngine.Netw
 Loading F:\Project Bimo\warisan\warisan_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: F:\Project Bimo\warisan\warisan_Data\Managed\TextMeshPro-5.6-Runtime.dll (this message is harmless)
 Loading F:\Project Bimo\warisan\warisan_Data\Managed\TextMeshPro-5.6-Runtime.dll into Unity Child Domain
-- Completed reload, in  0.271 seconds
+- Completed reload, in  0.353 seconds
 Platform assembly: F:\Project Bimo\warisan\warisan_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: F:\Project Bimo\warisan\warisan_Data\Managed\System.dll (this message is harmless)
 desktop: 1440x900 60Hz; virtual: 1440x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.605045 ms
+UnloadTime: 1.174669 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.313948 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 382.
+Total: 0.235519 ms (FindLiveObjects: 0.022527 ms CreateObjectMapping: 0.015213 ms MarkObjects: 0.180515 ms  DeleteObjects: 0.016969 ms)
+
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.017287 ms
+UnloadTime: 0.508194 ms
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 375.
-Total: 0.219427 ms (FindLiveObjects: 0.021357 ms CreateObjectMapping: 0.014628 ms MarkObjects: 0.166179 ms  DeleteObjects: 0.016676 ms)
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 397.
+Total: 0.502928 ms (FindLiveObjects: 0.030719 ms CreateObjectMapping: 0.020772 ms MarkObjects: 0.265361 ms  DeleteObjects: 0.184904 ms)
 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.606498 ms
-
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 389.
-Total: 0.584555 ms (FindLiveObjects: 0.031012 ms CreateObjectMapping: 0.021650 ms MarkObjects: 0.386485 ms  DeleteObjects: 0.144822 ms)
-
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2468 -> priority: 1 
-  Thread -> id: b28 -> priority: 1 
-=======
-    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
-    Vendor:   NVIDIA
-    VRAM:     3072 MB
-    Driver:   26.21.14.3086
-Begin MonoManager ReloadAssembly
-Platform assembly: D:\Project Game\warisan\warisan_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\Project Game\warisan\warisan_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\Project Game\warisan\warisan_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\Project Game\warisan\warisan_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\Project Game\warisan\warisan_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\Project Game\warisan\warisan_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: D:\Project Game\warisan\warisan_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading D:\Project Game\warisan\warisan_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: D:\Project Game\warisan\warisan_Data\Managed\TextMeshPro-5.6-Runtime.dll (this message is harmless)
-Loading D:\Project Game\warisan\warisan_Data\Managed\TextMeshPro-5.6-Runtime.dll into Unity Child Domain
-- Completed reload, in  0.267 seconds
-Platform assembly: D:\Project Game\warisan\warisan_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: D:\Project Game\warisan\warisan_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
-<RI> Initializing input.
-<RI> Input initialized.
-<RI> Initialized touch support.
 The referenced script on this Behaviour (Game Object 'DamageControl') is missing!
  
 (Filename:  Line: 1744)
@@ -72,10 +45,12 @@ The referenced script on this Behaviour (Game Object 'HealthControl') is missing
  
 (Filename:  Line: 1744)
 
-UnloadTime: 53.323200 ms
-Setting up 4 worker threads for Enlighten.
-  Thread -> id: 4b88 -> priority: 1 
-  Thread -> id: 3de4 -> priority: 1 
-  Thread -> id: 4034 -> priority: 1 
-  Thread -> id: 3cc4 -> priority: 1 
->>>>>>> 86352fd03c1fe81c559330d6513fc1bdf28c15e8
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.691343 ms
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 472.
+Total: 0.391166 ms (FindLiveObjects: 0.033938 ms CreateObjectMapping: 0.024575 ms MarkObjects: 0.244588 ms  DeleteObjects: 0.087771 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 118c -> priority: 1 
+  Thread -> id: 4be4 -> priority: 1 

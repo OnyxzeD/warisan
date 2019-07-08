@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-
-public class HeroAnimController : MonoBehaviour {
+public class HeroAnimController : MonoBehaviour
+{
 
     public Animator anim;
     public HitSoundH hitH;
@@ -12,8 +13,9 @@ public class HeroAnimController : MonoBehaviour {
     //private DamageControl damageCon = new DamageControl();
 
     // Use this for initialization
-    void Start () {
-        
+    void Start()
+    {
+
         anim = GetComponent<Animator>();
     }
 
@@ -37,5 +39,5 @@ public class HeroAnimController : MonoBehaviour {
     {
         
     }
-    
+
 }
