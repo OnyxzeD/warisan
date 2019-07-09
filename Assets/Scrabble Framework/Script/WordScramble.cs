@@ -48,10 +48,13 @@ public class WordScramble : MonoBehaviour {
     public float lerpSpeed = 5;
     public float checkSpeed = 1;
     public HeroAnimController hac;
+    public BossAnimController bac;
+    public CooldownController cooldownControl;
 
     List<CharObject> charObjects = new List<CharObject>();
     CharObject firstSelected;
 
+    //private bool BossAutoAttack = false;
     public int currentWord;
     public static WordScramble main;
 
@@ -159,27 +162,13 @@ public class WordScramble : MonoBehaviour {
 
     public void CheckWord()
     {
-        /*string word = "";
-        foreach(CharObject charObject in charObjects)
-        {
-            word += charObject.character;
-        }
-
-        if(word == words[currentWord].word)
-        {
-            currentWord++;
-            ShowScramble(currentWord);
-
-            return true;
-        }
-        return false;*/
         StartCoroutine(CoCheckWord());
+        
     }
 
+    bool autoAttack = false;
     IEnumerator CoCheckWord()
     {
-        
-
         string word = "";
         foreach (CharObject charObject in charObjects)
         {
@@ -189,9 +178,11 @@ public class WordScramble : MonoBehaviour {
         if (word == words[currentWord].word)
         {
             hac.HeroAttack();
+            cooldownControl.setAutoAttack(true);
             yield return new WaitForSeconds(checkSpeed);
             currentWord++;
             ShowScramble(currentWord);
+            
         }
     }
 }

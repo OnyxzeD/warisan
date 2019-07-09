@@ -89,6 +89,7 @@
     <Compile Include="Assets\Credit\Credit.cs" />
     <Compile Include="Assets\Dialog\Dialog.cs" />
     <Compile Include="Assets\Level\Script\BossAnimController.cs" />
+    <Compile Include="Assets\Level\Script\CooldownController.cs" />
     <Compile Include="Assets\Level\Script\DamageController.cs" />
     <Compile Include="Assets\Level\Script\HealthController.cs" />
     <Compile Include="Assets\Level\Script\HeroAnimController.cs" />
