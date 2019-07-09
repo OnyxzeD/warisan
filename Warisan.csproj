@@ -85,14 +85,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BossAnimController.cs" />
-    <Compile Include="Assets\Credit.cs" />
-    <Compile Include="Assets\DamageController.cs" />
+    <Compile Include="Assets\Countdown.cs" />
+    <Compile Include="Assets\Credit\Credit.cs" />
     <Compile Include="Assets\Dialog\Dialog.cs" />
-    <Compile Include="Assets\HealthController.cs" />
-    <Compile Include="Assets\HeroAnimController.cs" />
-    <Compile Include="Assets\Level\HitSoundB.cs" />
-    <Compile Include="Assets\Level\HitSoundH.cs" />
+    <Compile Include="Assets\Level\Script\BossAnimController.cs" />
+    <Compile Include="Assets\Level\Script\DamageController.cs" />
+    <Compile Include="Assets\Level\Script\HealthController.cs" />
+    <Compile Include="Assets\Level\Script\HeroAnimController.cs" />
+    <Compile Include="Assets\Level\Script\HitSoundB.cs" />
+    <Compile Include="Assets\Level\Script\HitSoundH.cs" />
     <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\Scrabble Framework\Script\CharObject.cs" />
     <Compile Include="Assets\Scrabble Framework\Script\WordScramble.cs" />
