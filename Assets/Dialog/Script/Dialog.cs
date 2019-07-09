@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Dialog : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Dialog : MonoBehaviour
     public float typingSpeed;
 
     public GameObject continueButton;
+    public GameObject skipButton;
 
     void Start()
     {
@@ -50,6 +52,12 @@ public class Dialog : MonoBehaviour
         {
             textDisplay.text = "";
             continueButton.SetActive(false);
+            skipButton.SetActive(true);
         }
+    }
+
+    public void EndDialogue()
+    {
+        
     }
 }
