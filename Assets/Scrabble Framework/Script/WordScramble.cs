@@ -38,6 +38,9 @@ public class Word
 public class WordScramble : MonoBehaviour {
 
     public Word[] words;
+    /*public string[] words = {"BUKIT","BAKTI","KERJA","JALAN","MAKAN",
+                             "MINUM","AROMA","KUMAN","SURAT","LEMAS",
+                             "CUKUR"};*/
     [Header("UI REFERENCE")]
     public CharObject prefab;
     public Transform container;
