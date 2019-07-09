@@ -166,7 +166,6 @@ public class WordScramble : MonoBehaviour {
         
     }
 
-    bool autoAttack = false;
     IEnumerator CoCheckWord()
     {
         string word = "";
@@ -182,7 +181,6 @@ public class WordScramble : MonoBehaviour {
             yield return new WaitForSeconds(checkSpeed);
             currentWord++;
             ShowScramble(currentWord);
-            
         }
     }
 }

@@ -41,6 +41,9 @@ public class CooldownController : MonoBehaviour {
 
     public void setAutoAttack(bool s)
     {
+        if(autoAttack){
+            return;
+        }
         autoAttack = s;
         Reset();
     }
