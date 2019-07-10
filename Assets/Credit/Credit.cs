@@ -6,6 +6,6 @@ public class Credit : MonoBehaviour {
 
     public void showMenu()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
     }
 }
