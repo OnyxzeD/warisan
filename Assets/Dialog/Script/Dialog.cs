@@ -11,6 +11,7 @@ public class Dialog : MonoBehaviour
     public string[] sentences;
     private int index;
     public float typingSpeed;
+    public AudioSource myAudio;
 
     public GameObject continueButton;
     public GameObject skipButton;
@@ -25,6 +26,11 @@ public class Dialog : MonoBehaviour
         if (textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
+        }
+        if (textDisplay.text == sentences[5])
+        {
+            myAudio = GetComponent<AudioSource>();
+            myAudio.Play();
         }
     }
 
@@ -53,12 +59,7 @@ public class Dialog : MonoBehaviour
             textDisplay.text = "";
             continueButton.SetActive(false);
             //skipButton.SetActive(true);
-            SceneManager.LoadScene("First");
+            SceneManager.LoadScene("Map");
         }
-    }
-
-    public void EndDialogue()
-    {
-        
     }
 }

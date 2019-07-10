@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PasukanAnimController : MonoBehaviour {
@@ -9,6 +10,7 @@ public class PasukanAnimController : MonoBehaviour {
     public HitSoundB hitB;
     public HealthController healthController;
     private float delayBeforeLoading = 2.5f;
+    public GameObject nextButton;
 
     private float timeElapsed;
 
@@ -38,13 +40,14 @@ public class PasukanAnimController : MonoBehaviour {
 
     public void PasukanDead()
     {
-        anim.Play("PasukanDead");
         timeElapsed += Time.deltaTime;
+        anim.Play("PasukanDead");
         anim.SetBool("isDead", true);
+        nextButton.SetActive(true);
 
         if (timeElapsed > delayBeforeLoading)
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("First");
         }
     }
 }

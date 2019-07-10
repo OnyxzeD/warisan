@@ -15,9 +15,19 @@ public class MainMenu : MonoBehaviour {
         SceneManager.LoadScene("CreditScene");
     }
 
+    public void showApproachBoss()
+    {
+        SceneManager.LoadScene("Approaching Boss");
+    }
+
     public void showMenu()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    public void showApproachIsland()
+    {
+        SceneManager.LoadScene("ApproachingIsland");
     }
 
     public void showDialog()
@@ -35,9 +45,19 @@ public class MainMenu : MonoBehaviour {
         SceneManager.LoadScene("ShipScene");
     }
 
-    public void showMMap()
+    public void showMap()
     {
         SceneManager.LoadScene("Map");
+    }
+
+    public void showStage1()
+    {
+        SceneManager.LoadScene("Stage1Level1");
+    }
+
+    public void showStage2()
+    {
+        SceneManager.LoadScene("Stage1Level2");
     }
 
     public void QuitGame()

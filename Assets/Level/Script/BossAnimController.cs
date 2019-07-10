@@ -47,7 +47,7 @@ public class BossAnimController : MonoBehaviour
 
         if(timeElapsed > delayBeforeLoading)
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("SceneKeris");
         }
     }
 
