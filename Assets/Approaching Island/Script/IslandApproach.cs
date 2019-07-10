@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Monolog : MonoBehaviour {
+public class IslandApproach : MonoBehaviour {
 
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
@@ -52,7 +52,7 @@ public class Monolog : MonoBehaviour {
             textDisplay.text = "";
             continueButton.SetActive(false);
             //skipButton.SetActive(true);
-            SceneManager.LoadScene("ApproachingIsland");
+            SceneManager.LoadScene("Map");
         }
     }
 
