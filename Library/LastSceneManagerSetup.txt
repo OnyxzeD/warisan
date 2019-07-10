@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/First.unity
+- path: Assets/ApproachingIsland.unity
   isLoaded: 1
   isActive: 1
