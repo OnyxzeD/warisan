@@ -35,6 +35,11 @@ public class MainMenu : MonoBehaviour {
         SceneManager.LoadScene("ShipScene");
     }
 
+    public void showMMap()
+    {
+        SceneManager.LoadScene("Map");
+    }
+
     public void QuitGame()
     {
         Application.Quit();

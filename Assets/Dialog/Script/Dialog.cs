@@ -52,7 +52,8 @@ public class Dialog : MonoBehaviour
         {
             textDisplay.text = "";
             continueButton.SetActive(false);
-            skipButton.SetActive(true);
+            //skipButton.SetActive(true);
+            SceneManager.LoadScene("First");
         }
     }
 
