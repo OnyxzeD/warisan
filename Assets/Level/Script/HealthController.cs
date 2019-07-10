@@ -10,7 +10,8 @@ public class HealthController : MonoBehaviour {
     public Text healthTextB;
     public BossAnimController bossAnimC;
     public HeroAnimController heroAnimC;
-
+    public PasukanAnimController pasukAnimC;
+    bool doOnce =false;
     // Use this for initialization
     void Start () {
         UpdateHealthB();
@@ -19,9 +20,11 @@ public class HealthController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (HealthB <= 0)
+        if (HealthB <= 0 && !doOnce)
         {
             bossAnimC.BossDead();
+            pasukAnimC.PasukanDead();
+            doOnce = true;
         }
 	}
 

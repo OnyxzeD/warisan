@@ -8,6 +8,7 @@ public class BossAnimController : MonoBehaviour
 {
 
     public Animator anim;
+    
     public HitSoundB hitB;
     public HealthController healthController;
     private float delayBeforeLoading = 2.5f;

@@ -12,8 +12,9 @@ public class CooldownController : MonoBehaviour {
     private bool canCount = true;
     private bool doOnce = false;
     public BossAnimController bac;
+    public PasukanAnimController pac;
     public bool autoAttack = false;
-
+    public bool isBoss;
     void Start()
     {
         uiText.text = "10.0";
@@ -33,7 +34,12 @@ public class CooldownController : MonoBehaviour {
             uiText.text = "10.00";
             timer = 0.0f;
             if (autoAttack) {
-                bac.BossAttack();
+                if (isBoss) { 
+                    bac.BossAttack();
+                }else if (!isBoss)
+                {
+                    pac.PasukanAttack();
+                }
                 Reset();
             }
         }
