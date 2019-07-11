@@ -87,6 +87,7 @@
   <ItemGroup>
     <Compile Include="Assets\Approaching Boss\Script\MonsterRoar.cs" />
     <Compile Include="Assets\Approaching Island\Script\IslandApproach.cs" />
+    <Compile Include="Assets\BgmController.cs" />
     <Compile Include="Assets\Credit\Credit.cs" />
     <Compile Include="Assets\Dialog\Script\Dialog.cs" />
     <Compile Include="Assets\Level\Script\BossAnimController.cs" />

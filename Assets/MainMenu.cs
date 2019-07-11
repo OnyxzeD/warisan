@@ -60,6 +60,16 @@ public class MainMenu : MonoBehaviour {
         SceneManager.LoadScene("Stage1Level2");
     }
 
+    public void showTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+
+    public void showKeris()
+    {
+        SceneManager.LoadScene("SceneKeris");
+    }
+
     public void QuitGame()
     {
         Application.Quit();

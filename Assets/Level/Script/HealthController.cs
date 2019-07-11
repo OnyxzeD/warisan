@@ -11,8 +11,12 @@ public class HealthController : MonoBehaviour {
     public BossAnimController bossAnimC;
     public HeroAnimController heroAnimC;
     public PasukanAnimController pasukAnimC;
+    public CooldownController cooldownC;
+    public BgmController bgm;
     bool doOnceB =false;
     bool doOnceH = false;
+    public bool isBoss;
+
     // Use this for initialization
     void Start () {
         UpdateHealthB();
@@ -25,7 +29,9 @@ public class HealthController : MonoBehaviour {
         {
             bossAnimC.BossDead();
             pasukAnimC.PasukanDead();
+            cooldownC.StopTimer();
             doOnceB = true;
+            bgm.Victory();
         }
         if (HealthH <= 0 && !doOnceH)
         {

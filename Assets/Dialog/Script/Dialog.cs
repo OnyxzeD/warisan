@@ -59,7 +59,7 @@ public class Dialog : MonoBehaviour
             textDisplay.text = "";
             continueButton.SetActive(false);
             //skipButton.SetActive(true);
-            SceneManager.LoadScene("Map");
+            SceneManager.LoadScene("Tutorial");
         }
     }
 }

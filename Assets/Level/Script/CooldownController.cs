@@ -13,8 +13,11 @@ public class CooldownController : MonoBehaviour {
     private bool doOnce = false;
     public BossAnimController bac;
     public PasukanAnimController pac;
+    public HealthController healthC;
     public bool autoAttack = false;
     public bool isBoss;
+    
+    
     void Start()
     {
         uiText.text = "10.0";
@@ -40,7 +43,9 @@ public class CooldownController : MonoBehaviour {
                 {
                     pac.PasukanAttack();
                 }
-                Reset();
+                
+                    Reset();
+                
             }
         }
 	}
@@ -58,5 +63,10 @@ public class CooldownController : MonoBehaviour {
         timer = mainTimer;
         canCount = true;
         doOnce = false;
+    }
+
+    public void StopTimer()
+    {
+        canCount = false;
     }
 }

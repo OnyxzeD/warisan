@@ -10,6 +10,10 @@ public class HeroAnimController : MonoBehaviour
     public Animator anim;
     public HitSoundH hitH;
     public HealthController healthController;
+    private float delayBeforeLoading = 2.5f;
+
+    private float timeElapsed = 0.0f;
+
     //private DamageControl damageCon = new DamageControl();
 
     // Use this for initialization
@@ -37,8 +41,16 @@ public class HeroAnimController : MonoBehaviour
 
     public void HeroDead()
     {
+        
+        
         anim.Play("HeroDead");
         anim.SetBool("isDead", true);
+        while (timeElapsed <= delayBeforeLoading)
+        {
+            timeElapsed += Time.deltaTime;
+        }
+        SceneManager.LoadScene("GameOver");
+
     }
 
 }
