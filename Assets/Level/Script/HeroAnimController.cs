@@ -37,7 +37,8 @@ public class HeroAnimController : MonoBehaviour
 
     public void HeroDead()
     {
-        
+        anim.Play("HeroDead");
+        anim.SetBool("isDead", true);
     }
 
 }
